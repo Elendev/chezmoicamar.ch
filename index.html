@@ -6,13 +6,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>Chez moi, ça marche</title>
-  <meta name="description" content="Chez moi, ça marche">
+  <meta name="description" content="Chez moi, ça marche &#128077;">
   <meta name="author" content="Elendev">
 
   <meta property="og:title" content="Chez moi, ça marche">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://chezmoiçamar.ch">
   <meta property="og:description" content="Chez moi, ça marche">
+
+  <meta property="og:image" content="thumbsup.png">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
 
     <style lang="css">
         body {
@@ -21,15 +24,22 @@
         }
         .container {
             display: flex;
+            flex-direction: column;
+            
             height: 100vh;
             width: 100vw;
         }
 
         .statement {
-            margin: auto;
+            margin: auto auto 0.5em;
             font-size: 8vw;
             font-family: Arial, Helvetica, sans-serif;
             text-align: center;
+        }
+
+        .thumbsup {
+            margin: 0.5em auto auto;
+            width: 10vw;
         }
 
     </style>
@@ -39,6 +49,7 @@
 <body>
     <div class="container">
         <h1 class="statement">Chez moi, ça marche&trade;</h1>
+        <img class="thumbsup" src="favicon.svg" alt="Thumbs up"/>
     </div>
 </body>
 </html>
